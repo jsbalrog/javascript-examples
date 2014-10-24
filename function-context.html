@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Function Context Example</title>
+    </head>
+    <script type="application/x-javascript">
+        var ride = {
+            make: 'Yamaha',
+            model: 'V-Star Silverado 1100',
+            year: 2005,
+            purchased: new Date(2005,3,12),
+            owner: {name: 'Spike Spiegel', occupation: 'bounty hunter'},
+            whatAmI: function() {
+                return this.year + ' ' + this.make + ' ' + ' ' + this.model;
+            }
+        }
+        
+        alert(ride.whatAmI());
+    </script>
+    <body></body>
+</html>
